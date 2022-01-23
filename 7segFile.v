@@ -10,8 +10,8 @@ module hex_to_sseg
     input wire [15:0] keyin,
     output reg [7:0] sseg
   );
-
-  reg [15:0] hex = 16'h0 ^keyin;
+//std logic vector 1 2 3 4 try to display them
+  reg [15:0] hex = keyin;
 
   always @(*) begin
     case(hex)
